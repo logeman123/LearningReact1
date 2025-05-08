@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  background-color: #282D35;
+  color: white;
+}
+
+header {
+  height: 90px;
+  background-color: #21222A;
+  padding: 30px 25px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-logo {
+  width: 40px;
+  margin-right: 7px;
+}
+
+nav > span {
+  color: #61DAFB;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+main {
+  position: relative;
+  padding: 60px 30px;
+}
+
+main::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image: url(/images/react.svg);
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: right 70%;
+
+  filter: grayscale(100%);
+  opacity: 0.07;
+  z-index: -1;
+}
+
+main > h1 {
+  margin: 0;
+  font-size: 2.4rem;
+}
+
+.facts-list {
+  margin-top: 46px;
+  max-width: 400px;
+}
+
+.facts-list > li {
+  padding-block: 10px;
+  line-height: 19px;
+}
+
+.facts-list > li::marker {
+  color: #61DAFB;
+  font-size: 1.5rem;
+}
+
+/* h1 {
+  margin-top: 30px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .nav-list {
+  list-style:none;
+  display: flex;
+  gap: 10px;
+}
+
+} */
