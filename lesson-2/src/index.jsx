@@ -1,22 +1,24 @@
+import React from 'react';
 import { createRoot } from "react-dom/client";
-import App from "./App";
-import Header from "./header";
-import MainContent from "./mainContent";
-import Footer from "./footer";
 
-const root = createRoot(document.getElementById("root"))
+function App () {
+        const hours = new Date().getHours()
+        let timeOfDay
 
-// function Page() {
-//     return (
-//         <>
-//             <Header />
-//             <MainContent />
-//             <Footer />
-//         </>
-//     )
-// }
+        if (hours < 12) {
+                timeOfDay = "morning"
+        } else if (hours >= 12 && hours < 18) {
+                timeOfDay = "afternoon"
+        } else {
+                timeOfDay = "evening"
+        }
 
-root.render(
-        //<Page />
-        <App />
-)
+
+
+        return (
+                <h1> Good {timeOfDay} it is {hours % 12} </h1>
+        )
+}
+
+const root = createRoot(document.getElementById("root"));
+root.render(<App />);
