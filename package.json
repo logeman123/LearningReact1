@@ -1,0 +1,27 @@
+{
+  "name": "react-class",
+  "version": "1.0.0",
+  "description": "Here, you can find the starter files for all the challenges in the course. To get started, download the entire repo and then navigate to the folder you need - the folders are structured just like the course.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/logeman123/LearningReact1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/logeman123/LearningReact1/issues"
+  },
+  "homepage": "https://github.com/logeman123/LearningReact1#readme",
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.4.1",
+    "react": "^19.0.0-rc-d48603a5-20240813",
+    "react-dom": "^19.0.0-rc-d48603a5-20240813",
+    "vite": "^4.4.5"
+  }
+}

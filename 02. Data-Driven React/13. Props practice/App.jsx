@@ -1,3 +1,5 @@
+import Joke from "./components/joke";
+
 /**
  * Challenge: create a page that displays your favorite jokes
  * - Create a Joke component in its own file.
@@ -18,7 +20,19 @@
  */
 
 export default function App() {
-    return (
-        <></>
+    return (   
+        <div className="jokes-container">
+        <Joke
+            punchline="I got my daughter a fridge for her birthday."
+        />
+        <Joke
+            question="How did I learn to make ice cream?"
+            punchline="I read the instructions."
+        />
+        <Joke
+            question="Why don't pirates travel on mountain roads?"
+            punchline="Scurvy."
+        />
+        </div>
     )
 }

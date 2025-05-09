@@ -1,9 +1,9 @@
 1. What do props help us accomplish?
-
+Props help us pass data from one components from another
 
 
 2. How do you pass a prop into a component?
-
+Passing it as an argument
 
 
 3. Can I pass a custom prop (e.g. `blahblahblah={true}`) to a native
@@ -12,7 +12,7 @@
 
 
 4. How do I receive props in a component?
-function Navbar() {
+function Navbar(props) {
     return (
         <header>
             ...
